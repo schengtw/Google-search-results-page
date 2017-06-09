@@ -1,26 +1,58 @@
 body {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 0px;
     padding: 0px;
 }
 
-.logo {
-    height: 5em;
-    width: 10em;
-    margin: 0em auto;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    padding: 1.5em 2em 6em;
+    font: 13px arial, sans-serif;
+    background: #f2f2f2;
 }
 
-input{
-    width: 50em;
-    height: 3em;
-    line-height: 0px;
-    font: 13px arial,sans-serif;
+.logo {
+    width: 8em;
+    margin-left: 0 1em;
+}
+
+.search-box {
+    width: 40em;
+    font: 16px arial,sans-serif;
     outline: none;
-    padding: 5px 9px 0px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+    padding: 0.8em 1em;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.16);
     border-radius: 2px;
     background-color: rgb(255, 255, 255);
-    margin: auto;
+    margin-left: 2em;
+    margin-right: auto;
+    background-image: url(http://1.bp.blogspot.com/-lINg3E20_4Y/VebwdAy_MaI/AAAAAAAAFJU/8Jg2H-3-_cc/s1600/Microphone.png), url(https://d2ch73et2vkq86.cloudfront.net/static/images/search_icon.png);
+    background-repeat:no-repeat;
+    background-size: 1em, 1.5em;
+    background-position: center right 3em, center right 0.2em;
+    background-origin: content-box;
+}
+
+.header-items {
+    width: 1.8em;
+    height: 1.8em;
+    margin-left: 1.4em;
+}
+
+.log-in-box {
+    margin-left:1.4em;
+    padding: 0.54em 0.7em;
+    border:1px solid #4285f4;
+    border-radius: 0.2em;
+    background: #4387fd;
+    font: 13px arial,sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
