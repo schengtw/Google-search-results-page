@@ -73,12 +73,14 @@ option-search {
    font: 13px arial,sans-serif;
    color: #777;
    cursor: pointer;
+   margin-left: 9em;
+   margin-right: 7em;
+   max-width: 52em;
 }
 
 .option-left{
     display: flex;
     flex-direction: row;
-    margin-left: 8em;
     margin-bottom: -1px;
 }
 
@@ -98,7 +100,6 @@ option-search {
 .option-right {
     display: flex;
     flex-direction: row;
-    margin-right: 49em;
 }
 
 .option-right .right-items {
@@ -106,4 +107,56 @@ option-search {
     min-width: 4em;
     text-align: left;
     padding-bottom: 0.8em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-results {
+    font: 13px arial,sans-serif;
+    color: rgb(128, 128, 128);
+    line-height: 45px;
+    margin-left: 13.3em;
+}
+
+result-lists {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.lists {
+   line-height: 1.2;
+   font: 13px arial,sans-serif;
+   margin-left: 13.3em;
+   margin-right: 12em;
+   max-width: 50em;
+}
+
+.lists a {
+    color:rgb(26, 13, 171);
+    font-weight: 500;
+    font: 18px solid arial,sans-serif;
+    text-decoration: none;
+}
+
+.list a:visited {
+    color: #609;
+}
+
+span {
+    color: rgb(221, 75, 57);
+}
+
+.link {
+   font: 14px solid arial,sans-serif;
+   color: rgb(0, 102, 33);
+   margin: -1em 0 -0.8em;
+}
+
+.description {
+    font: 13px arial,sans-serif;
+    color: rgb(84, 84, 84);
 }
