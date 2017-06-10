@@ -8,13 +8,18 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-start;
-    padding: 1.5em 2em 6em;
+    flex-direction: column;
+    padding: 1.5em 2em 0em;
     font: 13px arial, sans-serif;
-    background: #f2f2f2;
+    background: #fafafa;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+search-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .logo {
@@ -27,7 +32,7 @@ header {
     font: 16px arial,sans-serif;
     outline: none;
     padding: 0.8em 1em;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
     border: 1px solid rgba(0,0,0,0.16);
     border-radius: 2px;
     background-color: rgb(255, 255, 255);
@@ -44,6 +49,7 @@ header {
     width: 1.8em;
     height: 1.8em;
     margin-left: 1.4em;
+    cursor: pointer;
 }
 
 .log-in-box {
@@ -55,4 +61,49 @@ header {
     font: 13px arial,sans-serif;
     font-weight: bold;
     color: rgb(255, 255, 255);
+}
+
+option-search {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 2.5em 2em 0;
+   line-height: 40em;
+   background: #fafafa;
+   font: 13px arial,sans-serif;
+   color: #777;
+   cursor: pointer;
+}
+
+.option-left{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8em;
+    margin-bottom: -1px;
+}
+
+.left-items:first-child {
+    font-weight: bold;
+    color: #4285f4;
+    border-bottom: 3px solid #4285f4;
+}
+
+.option-left .left-items {
+    margin-right: 1em;
+    min-width: 4em;
+    text-align: center;
+    padding-bottom: 0.8em;
+}
+
+.option-right {
+    display: flex;
+    flex-direction: row;
+    margin-right: 49em;
+}
+
+.option-right .right-items {
+    margin-left: 1em;
+    min-width: 4em;
+    text-align: left;
+    padding-bottom: 0.8em;
 }
