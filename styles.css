@@ -124,7 +124,6 @@ main {
 result-lists {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .lists {
@@ -136,14 +135,10 @@ result-lists {
 }
 
 .lists a {
-    color:rgb(26, 13, 171);
-    font-weight: 500;
     font: 18px solid arial,sans-serif;
+    font-weight: 500;
+    color:rgb(26, 13, 171);
     text-decoration: none;
-}
-
-.list a:visited {
-    color: #609;
 }
 
 span {
@@ -159,4 +154,47 @@ span {
 .description {
     font: 13px arial,sans-serif;
     color: rgb(84, 84, 84);
+}
+
+.title {
+    font: 18px solid arial,sans-serif;
+    margin-left: 9.5em;
+    padding-bottom: 0.3em;
+}
+
+search-related {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10.8em;
+    margin-right: 12em;
+    max-width: 50em;
+    padding-bottom: 0.4em;
+}
+
+.related-left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    margin-right: 4em;
+    max-width: 17em;
+}
+
+.left-links {
+    font: 14px solid arial,sans-serif;
+    color: rgb(26, 13, 171);
+    text-decoration: none;
+    padding: 0.3em 0.3em 0.3em 0;
+}
+
+.related-right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+}
+
+.right-links {
+    font: 14px solid arial,sans-serif;
+    color: rgb(26, 13, 171);
+    text-decoration: none;
+    padding: 0.3em 0.3em 0.3em 0;
 }
