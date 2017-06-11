@@ -198,3 +198,40 @@ search-related {
     text-decoration: none;
     padding: 0.3em 0.3em 0.3em 0;
 }
+
+more-related {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10.8em;
+    margin-right: 12em;
+}
+
+.search-pages {
+    height: 0;
+    width: 20px;
+    padding-top: 40px;
+    font: 13px solid arial,sans-serif;
+    text-align: center;
+    color: rgb(66, 133, 244);
+    text-decoration: none;
+    background-image: url(https://www.google.ca/images/nav_logo242_hr.png);
+    background-position: -74px 0;
+    background-size: 167px;
+}
+
+.search-pages:first-child {
+    width: 28px;
+    background-position: -24px 0;
+}
+
+.search-pages:nth-child(2) {
+    color: inherit;
+    background-position: -52px 0;
+}
+
+.search-pages:last-child {
+    width: 71px;
+    text-align: right;
+    background-position: -96px 0;
+}
